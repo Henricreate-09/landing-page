@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --white: #fff;
+    --tortilla: #9A784F;
+
+    --footer1: rgb(63, 53, 47);
+    --footer2: rgb(241, 206, 154);
+}
+
+
+/* GENERAL */
+body {
+    display: flex;
+    flex-direction: column;
+
+    font-family: Montserrat, Helvetica, sans-serif;
+
+    background: var(--white);
+
+    margin: 0;
+}
+
+button {
+    border-radius: 0.5rem;
+    border: 0;
+    outline: 0;
+
+    width: 10rem;
+    height: 3rem;
+    
+    font-weight: 600;
+    font-family: Montserrat, Helvetica, sans-serif;
+
+    transition: 150ms;
+}
+button:hover {
+    font-size: 1.3rem;
+    font-weight: 750;
+
+    width: 11rem;
+    height: 4rem;
+    border-radius: 1rem;
+
+    cursor: pointer;
+}
+button:active {
+    font-size: 1.15rem;
+}
+.btn-colored {
+    color: var(--white);
+    background: var(--tortilla);
+
+}
+
+
+.top {
+    background-color: var(--tortilla);
+    padding-bottom: 5rem;
+}
+
+
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    padding: 2rem;
+
+    color: var(--white);
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-wrap: nowrap;
+}
+.header-left {
+    justify-content: flex-start;
+}
+.header-right {
+    justify-content: flex-end;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem
+}
+a {
+    color: var(--white);
+    text-decoration: none;
+
+    transition: 100ms;
+}
+a:hover {
+    font-size: 1.2rem;
+}
+
+
+
+/* PRESENTATION */
+.presentation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.presentation span {
+    padding: 4rem;
+    border-radius: 1rem;
+    
+    background-color: var(--white);
+    color: var(--tortilla);
+}
+.presentation img {
+    width: 30rem;
+    border-radius: 0.5rem;
+}
+
+
+
+/* INFORMATION */
+.middle {
+    color: var(--tortilla);
+    text-align: center;
+    align-items: center;
+}
+
+.information {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.info-card div div {
+    margin-top: 3rem;
+
+    width: 13rem;
+    height: 13rem;
+
+    border: var(--tortilla) 0.3rem solid;
+    border-radius: 2rem;
+}
+
+.subtext {
+    font-size: 1rem;
+}
+
+
+
+/* PHRASE */
+.phrase {
+    padding: 15rem;
+    font-weight: 550;
+    font-size: 2.5rem;
+
+    background-color: rgb(223, 223, 223);
+}
+
+
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 2rem;
+
+    color: var(--footer2);
+    background-color: var(--footer1);
+}
